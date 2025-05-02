@@ -11,11 +11,17 @@ public class Exerc01{
     }
 
 
-    public static void main([]Strings args){
+    public static void main(String[] args){
         int [] array = new int[10];
+        int soma = 0;
         Scanner scanner = new Scanner(System.in);
-        aux_buildArray = 0;
 
-        while(aux_buildArray)
+        for(int i = 0; i < array.length; i++){
+            System.out.printf("Digite o %d ° do array:  ", i+1);
+            array[i] = scanner.nextInt();
+        }
+        soma = somaElementos(array);
+        System.out.printf("A soma dos elementos desse aray é: %d", soma);
+        scanner.close();
     }
 }
